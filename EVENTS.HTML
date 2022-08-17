@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> buttons </title>
+    </head>
+       <body>Mouse Events
+      
+      
+      <style>
+
+         .container
+         {
+         width: 200px;
+         height: 200px;
+         background-color:yellow;
+         }
+
+         .image
+         {
+           width: 150px;
+           height:150px;
+         
+         }
+       
+      </style>
+    
+   
+    <div class="container"></div>
+
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeWidth()">Change Size</button>
+    <button onclick="addImage()"> Add Image </button>
+    <button onclick="removeImage()">remove </button>
+      
+        
+      
+     <script>
+     
+       function changeColor()
+       {
+          document.querySelector(".container").style.backgroundColor="blue";
+          
+       }
+       
+
+       function changeWidth()
+       {
+         
+         document.querySelector(".container").style.width="400px";
+         document.querySelector(".container").style.height="400px";
+       }
+
+       
+       function addImage()
+       {
+        document.querySelector(".container").setAtrribute("null","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8I4ACnYAUxGLMbBA0xklei1OF4PIPuAAC9g&usqp=CAU");
+
+       }
+
+       function removeImage()
+       {
+        document.querySelector(".container").setAtrribute("scr","null");
+       }
+
+    </script>
+    </body>
+ 
+ </html>
